@@ -1,43 +1,24 @@
-# :video_game: Assignment 09
-## Requirements
-- You will be given one of the problems below to solve
-- Use object oriented programming and layered architecture
-- All modules with the exception of the UI will have specifications and PyUnit test cases
-- The program must protect itself against the user’s invalid input
+# connect 4
 
-**NB!** We do not expect you to implement optimal play for the computer player. However, it should still employ a strategy when making its moves in order to attempt to win the game and provide an entertaining opponent for the human player. Minimally, the computer player should move to win the game whenever possible and should block the human player’s attempts at 1-move victory, whenever possible
+> 🔴 🟡 🟡 🔴 🔴 🟡
+> 
+> 🟡 🟡 🔴 🟡 🔴 🟡
+>
+> 🟡 🔴 🔴 🟡 🔴 🔴
+>
+> 🔴 🔴 🟡 🟡 🟡 🔴
 
-**deadline is week 14**
+## overview
+this is a console-based implementation of [connect 4](https://en.wikipedia.org/wiki/Connect_Four).
 
-## GUI Bonus (0.2P)
-- In addition to the console-based user interface required, also implement a graphical user interface (GUI) for the program
-- To receive the bonus, both user interfaces (menu-based and graphical) must use the same program layers. You have to be able to start the application with either user interface
-## AI Bonus (0.2P)
-- Implement computer AI using a [minimax algorithm](https://en.wikipedia.org/wiki/Minimax). Computer play should be competitive against the human player
-- In the case where minimax cannot be applied (e.g. Battleship, which is not a [complete information](https://en.wikipedia.org/wiki/Complete_information) game), find a suitable alternative; talk to your lab professor about the bonus possibility in this case
-## Best-of-FP Bonus (0.2P)
-- This bonus will be awarded to the very best implementations. To receive it, you need to implement both the **GUI** and **AI** bonuses, follow all implementation requirements, and have your work be selected by the laboratory professor
-- These implementations will be part of a separate GitHub repository that we aim to make publicly accessible in order to feature some of our students' best work during this semester
+connect 4 is a game in which the players choose a color and then take turns dropping colored tokens into a six-row, seven-column vertically suspended grid. the pieces fall straight down, occupying the lowest available space within the column. the objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens. connect four is a solved game. the first player can always win by playing the right moves.
 
+## features
+- implemented computer AI using a [minimax algorithm](https://en.wikipedia.org/wiki/Minimax). computer play is competitive against the human player.
+- used object oriented programming and layered architecture
+- the program is protected against the user’s invalid input
 
-## Problem Statements
-### Connect Four
-The game is described [here](https://en.wikipedia.org/wiki/Connect_Four)
-
-### Gomoku
-The game is described [here](https://en.wikipedia.org/wiki/Gomoku)
-
-### Obstruction
-The game is described [here](http://www.papg.com/show?2XMX)
-
-### Battleship
-The game is described [here](https://en.wikipedia.org/wiki/Battleship_(game))
-
-### Planes
-The game is described [here](https://ro.wikipedia.org/wiki/Avioane_(joc))
-
-### Nine men's morris
-The game is described [here](https://en.wikipedia.org/wiki/Nine_men%27s_morris)
-
-### Other games!
-You are free to implement a different board game, as long as its complexity is similar to those above. Talk to your laboratory professor to validate your idea before starting work!
+## gameplay
+![Screenshot from 2023-12-03 18-00-04](https://github.com/sorecauadrian/connect_4_without_gui/assets/79454929/3cb39e42-0668-4a4f-88f6-bbde508f927e)
+![Screenshot from 2023-12-03 18-00-21](https://github.com/sorecauadrian/connect_4_without_gui/assets/79454929/0a396a2d-99c8-4bc7-b090-b2187ff4c91f)
+![Screenshot from 2023-12-03 17-59-45](https://github.com/sorecauadrian/connect_4_without_gui/assets/79454929/66753f7b-979d-4d06-ae83-60e9674e87ab)
